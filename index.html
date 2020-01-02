@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roblox Bypassed Audios</title>
+    <script>
+        function copyCode(id) {
+            /* Get the text field */
+            var copyText = document.getElementById(id);
+
+            /* Select the text field */
+            copyText.select();
+            copyText.setSelectionRange(0, 9999999); /*For mobile devices*/
+
+            /* Copy the text inside the text field */
+            document.execCommand("copy");
+
+            /* Alert the copied text via a tooltip */
+            var tooltiptext1 = document.getElementById("tooltiptext1");
+
+            tooltiptext1.innerText = "Copied To Clipboard!";
+
+            setTimeout(() => {
+                tooltiptext1.innerText = "Click To Copy"
+            }, 1000);
+        }
+    </script>
+    <style>
+        *{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            color: white;
+            padding: 0em;
+            margin: 0em;
+            text-align: center;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            background-color: rgba(0,0,0,0.75);
+        }
+        .Font_Verdana{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: normal;
+        }
+        .BoldFont{
+            font-weight: bold;
+        }
+        #mainTable1{
+            width: 100%;
+            height: fit-content;
+            top: 10vh;
+            margin: 0em;
+            left: 0em;
+            text-align: center;
+            font-size: 1vw;
+            position: fixed;
+        }
+        tr{
+            height: min-content;
+        }
+        /**/
+        th,td{
+            width: 50%;
+            border-width: 0;
+            border-style: solid;
+            border-color: white;
+            line-height: 2em;
+            margin: 0px;
+        }
+        input{
+            background-color: transparent;
+            border-width: 0.1vh;
+            color: white;
+        }
+        /**/
+        #TabStrip{
+            height: 0px;
+        }
+    </style>
+    <style>
+        .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+        visibility: visible;
+        }
+        #tab1,#tab2,#tab3{
+            background-color: transparent;
+            border-width: 0em;
+            color: white;
+            cursor: pointer;
+            padding: 0em;
+            margin: 0em;
+            font-size: 2.5vh;
+            text-align: center;
+            position: fixed;
+        }
+
+        #MainTitle{
+            font-size: 5vh;
+            padding: 0;
+            margin: 0;
+        }
+        #Date{
+            font-size: 3vh;
+            position: fixed;
+        }
+        #titleDiv{
+            text-align: center;
+            width: 100%;
+            height: 10%;
+            position: fixed;
+            justify-content: center;
+            align-items: center;
+            color: rgba(0,0,0,0.25);
+            background-image: linear-gradient(purple,green);
+            -webkit-text-stroke: 0.25vh black;
+        }
+        .LeftCol{
+            text-align: center;
+        }
+        .RightCol{
+            text-align: center;
+        }
+        input{
+            border-width: 0px;
+            text-align: center;
+        }
+        *:focus{
+            outline-width: 0px;
+            border-width: 0px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="titleDiv">
+            <h1 class="Font_Verdana BoldFont" id="MainTitle">Roblox Bypassed Audios</h1>
+        </div>
+        <br>
+        <div id="TabStrip">
+        </div>
+        <br>
+        <br>
+        <br>
+        <table border="0" cellpadding="10" id="mainTable1">
+            <tr style="position: inherit;">
+                <th class="LeftCol" style="position: inherit;">Song Name</th><th class="RightCol" style="position: inherit;">Code</th>
+            </tr>
+            <tr style="position: inherit;">
+                <td class="LeftCol" style="position: inherit;">iann dior - emotions</td><td style="cursor: pointer;" class="RightCol"onclick="copyCode('code1')"><div class="tooltip" name="tooltipdiv1"><input style="cursor: pointer;" type="text" id="code1" value="4392881922"><span class="tooltiptext" id="tooltiptext1" style="opacity: 0.5; top: 2em;">Click To Copy</span></div></td>
+            </tr style="position: inherit;">
+        </table>
+    </center>
+</body>
+</html>
